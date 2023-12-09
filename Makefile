@@ -5,7 +5,7 @@ CFLAGS=-Iinclude
 ifeq ($(OS),Windows_NT)
 	LDFLAGS=-Llib -lpdcurses
 else
-	LDFLAGS=-lncurses
+	LDFLAGS=-lncurses -lSDL2
 endif
 
 all: roguelike
