@@ -1,8 +1,12 @@
 CC=gcc
 CFLAGS=-Iinclude
 
-# Aquí asumimos que estás en Linux; ajusta según sea necesario
-LDFLAGS=-lncurses
+# Detectar el sistema operativo y ajustar LDFLAGS en consecuencia
+ifeq ($(OS),Windows_NT)
+	LDFLAGS=-Llib -lpdcurses
+else
+	LDFLAGS=-lncurses
+endif
 
 all: roguelike
 
