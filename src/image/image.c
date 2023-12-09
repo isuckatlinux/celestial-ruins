@@ -1,7 +1,3 @@
-#include <stdlib.h>
+#include <image.h>
 
-typedef struct {
-    int id;
-    char name[50];
-    float salary;
-} Image;
+Image i1;
