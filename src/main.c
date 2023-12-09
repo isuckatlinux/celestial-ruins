@@ -3,16 +3,22 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include <termios.h>
 #include <unistd.h>
 
 // Custom library includes
-#include "include/enemy.h"
-#include "include/game.h"
-#include "include/item.h"
-#include "include/map.h"
-#include "include/player.h"
-#include "include/ui.h"
+#include "enemy.h"
+#include "game.h"
+#include "item.h"
+#include "map.h"
+#include "player.h"
+#include "ui.h"
 
 // Variables
 bool game_running = true;
+
+int main() {
+    // Inicializa el modo ncurses
+    init_ui();
+
+    return 0;
+}
