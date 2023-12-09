@@ -1,6 +1,6 @@
 // If on Windows, use curses.h, otherwise use ncurses.h
 #ifdef _WIN32
-    #include <curses.h>
+    #include <pdcurses.h>
 #else
     #include <ncurses.h>
 #endif
